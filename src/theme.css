@@ -1,0 +1,74 @@
+/* ─────────────────────────────────────────────────────────────
+   Theme tokens — dark default, light override via [data-theme="light"]
+   Ported from prototype.html
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --bg: #0c0e13;
+  --surface: #161a22;
+  --surface2: #1e2330;
+  --border: #262c3a;
+  --text: #e2e4ea;
+  --text-muted: #7a8399;
+  --text-dim: #3d4560;
+  --accent: #4a7af7;
+  --accent-dim: rgba(74, 122, 247, 0.12);
+  --green: #22c55e;
+  --amber: #f59e0b;
+  --map-bg: #10131c;
+  --map-grid: rgba(255, 255, 255, 0.018);
+  --map-fill: rgba(255, 255, 255, 0.06);
+  --map-stroke: rgba(255, 255, 255, 0.12);
+  --marker-ring: rgba(255, 255, 255, 0.8);
+  --hover-bg: rgba(255, 255, 255, 0.04);
+  --hover-bg-soft: rgba(255, 255, 255, 0.03);
+  --row-divider: rgba(255, 255, 255, 0.04);
+  --sidebar-bg: #0b0d14;
+  --tooltip-bg: #1a1e2b;
+  --btn-hover-strong: #252b3a;
+  --accent-hover: #3a6ae6;
+  --shadow-pop: 0 8px 28px rgba(0, 0, 0, 0.55);
+  --shadow-drop: 0 10px 30px rgba(0, 0, 0, 0.55);
+  --shadow-btn: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="light"] {
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --surface2: #eef0f5;
+  --border: #d9dde6;
+  --text: #14171f;
+  --text-muted: #5c6473;
+  --text-dim: #a5acbb;
+  --accent: #2b5fe3;
+  --accent-dim: rgba(43, 95, 227, 0.10);
+  --green: #16a34a;
+  --amber: #d97706;
+  --map-bg: #eef1f6;
+  --map-grid: rgba(15, 20, 40, 0.05);
+  --map-fill: rgba(15, 20, 40, 0.05);
+  --map-stroke: rgba(15, 20, 40, 0.18);
+  --marker-ring: rgba(15, 20, 40, 0.55);
+  --hover-bg: rgba(15, 20, 40, 0.05);
+  --hover-bg-soft: rgba(15, 20, 40, 0.035);
+  --row-divider: rgba(15, 20, 40, 0.06);
+  --sidebar-bg: #ffffff;
+  --tooltip-bg: #ffffff;
+  --btn-hover-strong: #dfe3ec;
+  --accent-hover: #244fc4;
+  --shadow-pop: 0 8px 28px rgba(15, 20, 40, 0.15);
+  --shadow-drop: 0 10px 30px rgba(15, 20, 40, 0.18);
+  --shadow-btn: 0 4px 16px rgba(15, 20, 40, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+}
+button { font-family: inherit; }
